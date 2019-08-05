@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+
+#this is where you want to require_relative files you need
+require_relative '../lib/weather_scraper.rb'
