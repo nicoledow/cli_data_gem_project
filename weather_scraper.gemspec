@@ -1,5 +1,7 @@
 lib = File.expand_path("lib", __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+
+#will there be problems loading the file below? Does it need to be require_relative ?
 require "weather_scraper/version"
 
 Gem::Specification.new do |spec|
@@ -30,4 +32,7 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 2.0"
   spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "pry"
+
+  spec.add_dependency "nokogiri"
 end
