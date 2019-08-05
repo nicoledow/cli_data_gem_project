@@ -9,6 +9,7 @@ class CLI
    #puts menu and asks to select a city to view
    puts "Please enter a United States zipcode to see that city's data."
    user_input = gets.strip
+   binding.pry
   end
 
 
