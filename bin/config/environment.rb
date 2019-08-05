@@ -1,3 +1,7 @@
 require 'nokogiri'
 require 'open-uri'
 require 'pry'
+require_relative '.../lib/CLI'
+require_relative '.../lib/weather_scraper'
+require_relative '.../lib/Scraper'
+require_relative '.../lib/City'
