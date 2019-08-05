@@ -2,3 +2,8 @@
 
 #this is where you want to require_relative files you need
 require_relative '../config/environment'
+
+#delete these lines if causing bugs - where to put them???
+require_relative '../lib/City'
+require_relative '../lib/CLI'
+require_relative '../lib/Scraper'
