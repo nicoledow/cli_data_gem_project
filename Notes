@@ -3,6 +3,7 @@ Program begins by starting a new CLI Interface (calling CLI.new)
 
 Scraper - responsible for getting city data from timeanddate.com
           *what is the best method to organize scraped data?
+          *format for weather links w/ zip code: https://www.timeanddate.com/weather/@z-us-03221
 City - is instantiated from scraped data / attributes hold current city data (temp, humidity, etc.)
        *should have series of methods of returning specific data
 CLI - gives user menu of options / menu returns data stored in City
