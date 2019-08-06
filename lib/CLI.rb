@@ -12,6 +12,7 @@ class CLI
    puts "Please enter a United States zipcode to see that city's data."
    zip_code = gets.strip
    city_url = "https://www.timeanddate.com/weather/@z-us-#{zip_code}"
+   binding.pry
    city_url
   end
 
@@ -23,6 +24,7 @@ class CLI
       info_menu
     elsif response.downcase == "no"
       puts "Goodbye!"
+      #should I add a loop to go back to beginning of program/welcome message?
     else
       puts "Invalid command. Please type 'yes' or 'no'."
       more_info?
