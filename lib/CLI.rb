@@ -15,7 +15,19 @@ class CLI
    city_url
   end
 
+  def more_info?
+    puts "Would you like to see more information on your city? Type 'yes' or 'no'."
+    response = gets.strip
 
+    if response.downcase == "yes"
+      info_menu
+    elsif response.downcase == "no"
+      puts "Goodbye!"
+    else
+      puts "Invalid command. Please type 'yes' or 'no'."
+      more_info?
+    end
+  end
 
 
 
